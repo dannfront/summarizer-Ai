@@ -16,7 +16,7 @@ class Server {
     private configure() {
         const limit = rateLimit({
             windowMs: 60 * 60 * 100,
-            limit: 1,
+            limit: 15,
             skipFailedRequests: false,
             message: "Request limit reached"
         })
