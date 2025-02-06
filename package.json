@@ -27,7 +27,7 @@
   },
   "scripts": {
     "dev": "bun run --watch src/app.ts",
-    "build": "rimraf dist && bunx tsc",
+    "build": "bun install && dist && bunx tsc",
     "start": "bun run dist/app.js"
   },
   "type": "module"
